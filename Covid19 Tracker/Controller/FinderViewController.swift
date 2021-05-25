@@ -9,6 +9,7 @@ import UIKit
 
 class FinderViewController: BaseViewController, UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var emptySearchImageView: UIImageView!
     
     let seachController  = UISearchController()
     var currentAPITask: URLSessionDataTask?
@@ -143,6 +144,7 @@ extension FinderViewController:UITableViewDataSource,UITableViewDelegate{
         return UIDevice.current.userInterfaceIdiom == .pad ? IPADTABLECELLHEIGHT : IPHONETABLECELLHEIGHT
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        emptySearchImageView.isHidden = countryNameListCompact.isEmpty ? false : true
         return countryNameListCompact.count
     }
     
