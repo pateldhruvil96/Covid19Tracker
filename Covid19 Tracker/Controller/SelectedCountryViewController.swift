@@ -76,10 +76,15 @@ class SelectedCountryViewController: BaseViewController {
                 saveButtonOutlet.setImage(UIImage.init(systemName: "bookmark.fill"), for:.highlighted)
             }
         }else{
-            callWorldStatsAPI()
-            titleLabel.text = "World"
-            backButtonOutlet.isHidden = true
-            saveButtonOutlet.isHidden = true
+            if !Reachability.isConnectedToNetwork(){
+                alert(title: "Oops", message: "Not connected with internet")
+            }else{
+                callWorldStatsAPI()
+                titleLabel.text = "World"
+                backButtonOutlet.isHidden = true
+                saveButtonOutlet.isHidden = true
+            }
+            
         }
         
     }
