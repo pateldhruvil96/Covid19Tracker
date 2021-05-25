@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20E241" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ImageSave" representedClassName="ImageSave" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="SelectedCountry" representedClassName="SelectedCountry" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="cityCode" optional="YES" attributeType="String"/>
+        <attribute name="confirmed" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="countryCode" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="deaths" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lat" optional="YES" attributeType="String"/>
+        <attribute name="lon" optional="YES" attributeType="String"/>
+        <attribute name="province" optional="YES" attributeType="String"/>
+        <attribute name="recovered" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="SelectedCountry" positionX="-54" positionY="18" width="128" height="209"/>
+        <element name="ImageSave" positionX="-54" positionY="90" width="128" height="44"/>
+    </elements>
+</model>
