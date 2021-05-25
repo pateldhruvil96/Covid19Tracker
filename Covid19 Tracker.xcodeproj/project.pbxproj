@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -285,7 +285,6 @@
 				25846DBE8A904C6B8E69634E /* Pods-Covid19 Tracker.debug.xcconfig */,
 				292AD5C45DED0C44B60EA4DB /* Pods-Covid19 Tracker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
